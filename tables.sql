@@ -18,8 +18,7 @@ CREATE TABLE "public"."Posts" (
 "date" date DEFAULT now(),
 "title" varchar(64) NOT NULL,
 "content" text,
-"likes" int4 DEFAULT 0,
-CONSTRAINT "Posts_pkey" PRIMARY KEY ("id")
+"likes" int4 DEFAULT 0
 );
 
 ALTER TABLE "public"."Posts" ADD PRIMARY KEY ("id");
